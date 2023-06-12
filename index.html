@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doom</title>
+</head>
+<body>
+
+    <div id="main">Esta es una etiqueta</div>
+    <div class="main">Esta es una etiqueta</div>
+    
+<button *onclick*="alert('Hola Mundo!')">Presióname</button>
+
+<h1 *onclick*="cambiarTexto(this)">Presiona el texto para cambiarlo</h1>
+
+<script>
+
+function cambiarTexto(id) {
+  id.innerHTML = "Texto cambiado";
+}
+
+function manejadorEvento() {
+  alert('Hola desde el event handler.');
+}
+
+function manejadorEvento2() {
+  alert('Hola desde el segundo event handler.');
+}
+
+const boton1 = document.getElementById('boton1');
+boton.onclick = manejadorEvento();
+element.addEventListener("click", manejadorEvento);
+element.addEventListener("click", manejadorEvento2);
+</script>
+
+</body>
+</html>
